@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Portfolio Website HTML CSS  || Web Addicted </title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navgaition menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">Developer</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">Resume</a></li>
+
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one" style="color: white;">Hello,</div>
+          <div class="text-two" style="color: white;">I'm a Developer</div>
+          <div class="text-three">Frontend Developer</div>
+         
+        </div>
+        <div class="button">
+          <button>Hire Me</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAYFBMVEX///8AAAALCwsTExP7+/vh4eH4+Pjp6emYmJiJiYnU1NTx8fGEhITOzs6pqand3d1QUFCRkZG3t7cqKio0NDQ+Pj5iYmJFRUW9vb1tbW3ExMSfn594eHgfHx9bW1sZGRm80mKqAAAF0UlEQVR4nM1c2WLiMAysc5OLIxehBP7/L7cpdItjWZYdOXRed3EHW5ZGh/n4WIsoruqyb+5B0Ax9eariZPWSaxFnfSMkNLcsfiejtG4FiHudvolSknUwpRldVryD0knP6IF6c+PKBxMnIYZ8U0rJ0Uxpxi7ajlN8o3ESot/M4POAyukLGx3h2YaTuJ+34HSxoTTjsgEnq336xsk3p701JeHdrvaauIJj8soqceL0xcpnzLm6cRJi9OdFa1dOQnz64uRk5D/wZFYJObhAOPjRDCsOb4aXA0wa8x/GEPq4gbt1nIS48nOK13ISgj+fGIl/ueuvZX2+5Jn6Tz03pzSkMBrrKn3eslQN3MGemZTRou7jp6wyS/X/MFtVYbh6Ta3sAqC7Al5x/IkxakvQhIGskNdXIQmVNhsGnO3AySnXmvmh1n4IOnJOaaw7vanG3DSQHB75OCUHkFJ4xINsCpwfX1iGvXlv9NCAV+Dz6tDptYQcJVZNke/+9SqnKynmqy73wMUpUTxOSLxFhbrBXAImv1tb0w+UCxhWTKSWXtDiXqdKTqb3a3aQL1Fg5QAVt77j4RRJUqq1TEuWW8WUQEhpsfWa1YLUxEPq9QqF9unbMqvmuX6v/ry198hLt8AjP6t1pJa2zuMTTitJyReFySe8flOnSpOsFniin5QsOW2+dIA8kkoKFU7SURKuPN5TCvWlywqX1SsokByNk/SX9BhP8id7P5cVWn5Scjx2sPRIWoDn+Mq1a568k7rZx67ROyn789vfPZBaqH9rP5Ot/DyFlPX9E1uQsmxKLZNGP6RuVtpRSR38kLKLf0qS5YlUa/FhtQzhiZSFVUVqUZmHlFp8HsgOFKjmZSykgJoL9dtCNSQe5Qk1imiqOIFKpTwaHZq0GUjFZ7BLwdN7P0NLj4QPwpVSnuGJZeJNNQ1N9ZYn78vhxU22oZuv4unbakgZjEPbo/BLKsD2CuissZLSN9lLXWgukB44T4EDqNH/QFP8rLBBD55KulrifcFRdVgx3kTlqU8V6HBSd5T/SrHDW4MBDylj778/5d9N2qjIz3AX5wUNU83TPD0ZDrdxHPsDodHM1DKKgC6IO3qm+SDnASUIXM1toEPmDp5cFPPODuARnvg40HBU7maLTV+z9Waweer8Iz3dpv+eLJj6U6oROw9wzVcqrbVfPMR6UtXZ7nrdZXX1uPB6K7xzTZzFWu/ZadxzoQ1+DVcTWU9KmytrT7xhmiyJtXar9zlAEvrEwLJVF23sCJFvHWuj+MQg0sFc5gH0diMjO6tnSxB3cEOjmGbqY4Zdw1cFsk+muTGdtJ+x6gT100CEeIEMp00rhDqizsXBqCALJNq4j12jc7mEE0DOnpT2g8AkC0mBYELMUS1gYbUlOeZ4QpZwMqsCk+bES43pC6epCUzakWdbseTGQVmhs8I1Uf0n6Li4fWzGs4Ub6fzO+Fi9tVw3viPqTLSis/HpiK1jN2a6X4aFrlkRssWbHSfMHbwsqt2tC+FLCdtaFTX/HMFlc2pObZWZYhF+SUs5RMrBPRHaeFCbnDiUK2dxTxqnf8JixiQyrybh9xBz6quDH9BJWb+QmcZvR5iOWLADQc5NE5faz3Ufu1RnyC/HYn1GjKBxeuwzUTOule+b7EA9P6xowg7imBGmzD2AptbRlx/8IMkqfRnAD0ihJl35ZM4WJLlvEfd4QJEKq9/x2YIS/zZ1CDM6MyfamzlOYGWuJ7Bc2xPM/XfiD1lwwmhUEWsjhoarSSnoi83+YHxLs+qpuCtMSt34EzI+YJIvrG00Kkz5O+GHbfhh0FTRxtH4gQa/flg52B8Mr3HeYucmS2ftzNKBVmXf4c9noD69oFVw2IHOaG6cyPwCUy9/ktTm+vwHmE/4k6T+5PFh3TCf0I0SPPAGMTwDF8S0UjU7DPnoW1y6qZygPrH2D3M1Yb+5oqK8Q8033quO1gs5bkirI/eS03PZUiVoQEMIoBmOF9Cc/gGLt1BxKMbyjgAAAABJRU5ErkJggg==" alt="" />
+          </div>
+          <div class="right">
+            <div class="topic">Designing Is My Passion</div>
+            <p>
+                Hello! I’m Preethi, a passionate frontend developer with a keen eye for detail and a love for creating engaging, user-friendly web experiences.I specialize in transforming design concepts into functional, responsive, and visually stunning websites and applications.I began my journey into frontend development for university projects. Since then, I’ve had the opportunity to work on a diverse range of projects, from a simple web page to dynamic Ecommerce platform.
+                I'm proficient in HTML,CSS,JS,Version Control and Design tools
+                I believe in a user-centric approach to frontend development, prioritizing clean, intuitive, and accessible designs. My goal is to not just meet the requirements but to anticipate user needs and enhance their overall experience. I stay updated with the latest trends and best practices to ensure my work is not only functional but also innovative.
+            </p>
+            <div class="button">
+              <button>Download CV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <div class="topic">Skills Reflects Our Knowledge</div>
+            <p>I am committed to continuous learning and staying updated with the latest industry trends, tools, and best practices. This dedication allows me to apply cutting-edge techniques and technologies to my work, ensuring that I deliver modern and innovative solutions.
+
+                Explore my portfolio to see how these skills come together in my projects, and feel free to reach out if you’d like to discuss how my expertise can contribute to your next endeavor.
+                
+            </p>
+            
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">HTML</div>
+              <div class="per">90%</div>
+              <div class="buttons">
+                <button>Projects</button>
+              </div>
+            </div>
+            <div class="box">
+              <div class="topic">CSS</div>
+              <div class="per">70%</div>
+              <div class="buttons">
+                <button>Projects</button>
+              </div>
+              
+            </div>
+            <div class="box">
+              <div class="topic">Flutter</div>
+              <div class="per">50%</div>
+              <div class="buttons">
+                <button>Projects</button>
+              </div>
+
+            </div>
+            <div class="box">
+              <div class="topic">Design</div>
+              <div class="per">60%</div>
+              <div class="buttons">
+                <button>Projects</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Services Section Start -->
+    <section class="services" id="services">
+      <div class="content">
+        <div class="title"><span>My Services</span></div>
+        <div class="boxes">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="topic">Web Devlopment</div>
+            <p>As a dedicated web developer, I bring your digital visions to life with a blend of creativity, technical skill, and user-focused design. My approach to web development centers around creating seamless, responsive, and interactive web experiences that captivate users and drive results.</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="topic">Graphic Design</div>
+            <p>Crafting intuitive user interfaces and seamless user experiences for web and mobile applications. I combine functionality with aesthetics to ensure that users find your digital products both enjoyable and easy to use.</p>
+          </div>
+          
+          
+         
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-tablet-alt"></i>
+            </div>
+            <div class="topic">Apps Devlopment</div>
+            <p> Designing and developing native and cross-platform mobile applications for iOS and Android using technologies like Swift, Kotlin, React Native, and Flutter. I ensure that apps are intuitive, high-performing, and tailored to the unique needs of mobile users.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me section Start -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title"><span>Contact Me</span></div>
+        <div class="text">
+          <p>
+            I’m always excited to discuss new projects, collaborations, or simply to chat about the latest in technology and design. Whether you have a specific project in mind, need some advice, or just want to connect, I’m here to help.
+          </p>
+          <div class="button">
+            <button>Let's Chat</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <script src="script.js"></script>
+  </body>
+</html>
